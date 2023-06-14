@@ -1,0 +1,740 @@
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
+
+ .video-container {
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%;
+ }
+
+ .video-container video {
+     width: 100%;
+ }
+
+ @font-face {
+     font-display: swap;
+     font-family: 'Poppins', 'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     src: url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff2') format('woff2'),
+         url('https://ajtatumdigital.com/wp-content/ajtd-fonts/Poppins-Medium.woff') format('woff');
+ }
+
+ .plyr__controls {
+     padding-top: .5em !important;
+ }
+
+ .plyr__volume input[type=range]::-webkit-slider-thumb,
+ .plyr__progress input[type=range]::-webkit-slider-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-moz-range-thumb,
+ .plyr__progress input[type=range]::-moz-range-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ .plyr__volume input[type=range]::-ms-thumb,
+ .plyr__progress input[type=range]::-ms-thumb {
+     background-color: #0090B8 !important;
+ }
+
+ :root {
+     --plyr-color-main: #0090B8;
+     --plyr-font-family: 'Poppins';
+     --plyr-font-size-time: .9em;
+     --plyr-font-weight-regular: 500;
+     --plyr-font-weight-bold: 600;
+     --plyr-video-controls-background: #002E4D;
+     --plyr-video-control-color: #FFFFFF;
+     --plyr-video-control-color-hover: #FFFFFF;
+     --plyr-video-control-background-hover: #0090B8;
+     --plyr-audio-control-background-hover: #0090B8;
+     --plyr-menu-background: #0090B8;
+     --plyr-menu-color: #FFFFFF;
+     --plyr-menu-item-arrow-color: #FFFFFF;
+     --plyr-menu-arrow-color: #FFFFFF;
+     --plyr-menu-border-color: #FFFFFF;
+     --plyr-range-fill-background: #FFFFFF;
+ }
