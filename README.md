@@ -2,6 +2,8 @@
 
 This is a custom WordPress Plugin using the open-source video player [Plyr](https://github.com/sampotts/plyr) along with [HLS.js](https://github.com/video-dev/hls.js) and integrating it with [Mux Data](https://docs.mux.com/guides/data).
 
+---
+
 ## Files
 
 * **public/plyr-3.7.8** is a release from Plyr's public repository.
@@ -11,6 +13,21 @@ This is a custom WordPress Plugin using the open-source video player [Plyr](http
 * **css/ajtd-plyer.css** is a customized skin for plyr.
 * **ajtd-wp-plyer.php** is a simple PHP class to load the WordPress plugin as a shortcode.
   * The short code can be used multiple times on a page; however, the JavaScript and CSS will only be loaded once, in the footer, per page.
+
+---
+
+## Installation
+
+To install this plugin as is:
+
+1. Clone this project to your local machine and then compress/zip the folder.
+2. Go to your WordPress Dashboard
+3. Go to Plugins > Add New
+4. Click the "Upload Plugin" button and select the .zip file you just created.
+5. Click "Install Now"
+6. Begin using plugin by calling the short code directly or via [Shortcoder](https://wordpress.org/plugins/shortcoder/) plugin!
+
+---
 
 ## Recommendations
 
@@ -26,6 +43,41 @@ When you go to use the shortcode with Shortcoder, you'll be prompted to enter in
 
 ![Shortcoder Screenshot](https://raw.githubusercontent.com/AJTatumDigital/ajtd-wp-plyr/master/public/AddNewShortcodeScreenshot.png)
 
+---
+
+## Notes for Script Optimization & Lazy Load Plugins
+
+If you use [Autoptimize](https://wordpress.org/plugins/autoptimize/) or a similar plugin that optimized javascript, it is recommended to excluded these scripts. From my experience, when the scripts are optimized, the storyboard/preview thumbnails do not work as they should.
+
+The scripts to exclude are:
+
+`/wp-content/plugins/ajtd-wp-plyr/public/plyr-3.7.8/plyr.min.js, /wp-content/plugins/ajtd-wp-plyr/public/hls-1.4.5/hls.min.js, /wp-content/plugins/ajtd-wp-plyr/public/js/ajtd-plyr-hls.min.js, /wp-content/plugins/ajtd-wp-plyr/public/js/mux-embed.min.js`
+
+If you use a plugin such as [a3 Lazy Load](https://wordpress.org/plugins/a3-lazy-load/), you can have it enabled for all the settings but under "Lazy Load Videos and iframes" for "Skip Videos Class" enter "plyr-video".
+
+---
+
+## Issues
+
+If you find anything weird with this plugin, please use the GitHub issues tracker.
+
+Please note, we are not responsible for issues with Plyr, HLS.js, or Mux Data. Plese use the appropriate methods of contact for each of those third-parties.
+
+---
+
+## Contributing
+
+This project welcomes and appreciates any contributions made.
+
+There are several ways you can contribute, namely:
+
+* Assist in making this a more generic plugin (renaming the plugin, files, etc).
+* Report any bug found.
+* Suggest some features or improvements.
+* Creating pull requests.
+
+---
+
 ## Author
 
 ![HLS.js](https://raw.githubusercontent.com/AJTatumDigital/ajtd-wp-plyr/master/public/logos/hls.png)
@@ -37,6 +89,8 @@ When you go to use the shortcode with Shortcoder, you'll be prompted to enter in
 ![AJ Tatum Digital](https://raw.githubusercontent.com/AJTatumDigital/ajtd-wp-plyr/master/public/logos/ajtatumdigital.png)
 
 Bridging all these components together and developing this WordPress plugin/short code was done by [AJ Tatum](https://github.com/ajtatum/), founder of [AJ Tatum Digital](https://ajtatumdigital.com/?utm_source=github_organization&utm_medium=social&utm_campaign=sourcecode).
+
+---
 
 ## Copyright and License
 
