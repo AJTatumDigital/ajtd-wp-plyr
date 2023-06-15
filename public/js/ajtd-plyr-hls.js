@@ -153,8 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				default: 1080,
 				options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240],
 			},
-			previewThumbnails: { enabled: true, src: video.dataset.storyboard },
-			youtube: { noCookie: true, rel: 1, showinfo: 1, iv_load_policy: 3, modestbranding: 0, playsinline: 1 }
+			previewThumbnails: { enabled: true, src: `https://image.mux.com/${playbackid}/storyboard.vtt?format=webp` }
 		};
 
 		const sourceVideo = defaultOptions.sources[0];
@@ -194,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					hlsjs: hls,
 					Hls: Hls,
 					data: {
-						env_key: "",
+						env_key: "irob8nmfqd1ni6bpd6bte023b",
 						player_software_name: "Plyr",
 						player_software_version: "3.7.8",
 						player_name: "Plyr",
@@ -204,7 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
 						video_title: `${video.dataset.title}`,
 						video_duration: videoDuration,
 						viewer_user_id: `${localStorage.ajs_anonymous_id}`,
-						page_type: "iframe",
+						page_type: "watchpage",
 						video_stream_type: "on-demand",
 						custom_1: `${video.dataset.postslug}`,
 						custom_2: `${video.dataset.topic}`,
