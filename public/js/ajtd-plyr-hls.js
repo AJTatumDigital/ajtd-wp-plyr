@@ -7,74 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	let defaultOptions = {};
 	const m3u8FileType = "application/x-mpegURL";
 
-	/* const players = Array.from(document.querySelectorAll(".plyr-video")).map(
-		(p) => {
-			let playbackid = String(p.dataset.playbackid);
-			let m3u8 = Boolean(p.dataset.m3u8);
-			let mp4high = Boolean(p.dataset.mp4high);
-			let mp4medium = Boolean(p.dataset.mp4medium);
-			let mp4low = Boolean(p.dataset.m3u8low);
-
-			if(m3u8) {
-				sources.push({
-					src: `https://stream.mux.com/${playbackid}.m3u8`,
-					type: 'application/x-mpegURL'
-				  })
-			}
-			if(mp4high) {
-				sources.push({
-					src: `https://stream.mux.com/${playbackid}/high.mp4`,
-					type: 'video/mp4',
-					size: 1080
-				  })
-			}
-			if(mp4medium) {
-				sources.push({
-					src: `https://stream.mux.com/${playbackid}/medium.mp4`,
-					type: 'video/mp4',
-					size: 540
-				  })
-			}
-			if(mp4low) {
-				sources.push({
-					src: `https://stream.mux.com/${playbackid}/low.mp4`,
-					type: 'video/mp4',
-					size: 360
-				  })
-			}
-			
-			defaultOptions = {
-				type: "video",
-				title: p.dataset.title,
-				sources: sources,
-				poster: p.dataset.poster,
-				controls: [
-					"play-large",
-					"play",
-					"progress",
-					"current-time",
-					"mute",
-					"volume",
-					"captions",
-					"settings",
-					"pip",
-					"airplay",
-					"fullscreen",
-				],
-				settings: ["captions", "quality", "speed", "loop"],
-				loadSprite: true,
-				iconUrl: "https://ajtatumdigital.com/wp-content/ajtd-plyr-3.7.8/plyr.svg",
-				storage: { enabled: true, key: "ajtd-plyr" },
-				quality: {
-					default: 1080,
-					options: [4320, 2880, 2160, 1440, 1080, 720, 576, 480, 360, 240],
-				},
-				previewThumbnails: { enabled: true, src: p.dataset.storyboard },
-			};
-			
-			return new Plyr(p, defaultOptions)}
-	); */
-
 	const videos = document.querySelectorAll(".plyr-video");
 	videos.forEach((video) => {
 		let videoDuration = 0;
@@ -160,6 +92,26 @@ document.addEventListener("DOMContentLoaded", () => {
 		const source = sourceVideo.src;
 		const sourceFileType = sourceVideo.type;
 
+		var muxData = {
+			env_key: "irob8nmfqd1ni6bpd6bte023b",
+			player_software_name: "Plyr",
+			player_software_version: "3.7.8",
+			player_name: "Plyr",
+			player_version: "3.7.8",
+			player_init_time: window.muxPlayerInitTime,
+			video_id: `${video.dataset.videoid}`,
+			video_title: `${video.dataset.title}`,
+			video_duration: videoDuration,
+			viewer_user_id: `${localStorage.ajs_anonymous_id}`,
+			page_type: "watchpage",
+			video_stream_type: "on-demand",
+			custom_1: `${video.dataset.postslug}`,
+			custom_2: `${video.dataset.topic}`,
+			custom_3: `${video.dataset.product}`,
+			custom_4: `${video.dataset.isreview}`,
+			custom_5: `${video.dataset.softwareused}`
+		};
+
 		if (Hls.isSupported() && sourceFileType === m3u8FileType) {
 			// For more Hls.js options, see https://github.com/dailymotion/hls.js
 			const hls = new Hls();
@@ -192,25 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					debug: false,
 					hlsjs: hls,
 					Hls: Hls,
-					data: {
-						env_key: "irob8nmfqd1ni6bpd6bte023b",
-						player_software_name: "Plyr",
-						player_software_version: "3.7.8",
-						player_name: "Plyr",
-						player_version: "3.7.8",
-						player_init_time: window.muxPlayerInitTime,
-						video_id: `${video.dataset.videoid}`,
-						video_title: `${video.dataset.title}`,
-						video_duration: videoDuration,
-						viewer_user_id: `${localStorage.ajs_anonymous_id}`,
-						page_type: "watchpage",
-						video_stream_type: "on-demand",
-						custom_1: `${video.dataset.postslug}`,
-						custom_2: `${video.dataset.topic}`,
-						custom_3: `${video.dataset.product}`,
-						custom_4: `${video.dataset.isreview}`,
-						custom_5: `${video.dataset.softwareused}`
-					},
+					data: muxData,
 				});
 			}
 		} else {
@@ -223,25 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (typeof mux !== "undefined") {
 				mux.monitor(video, {
 					debug: false,
-					data: {
-						env_key: "irob8nmfqd1ni6bpd6bte023b",
-						player_software_name: "Plyr",
-						player_software_version: "3.7.8",
-						player_name: "Plyr",
-						player_version: "3.7.8",
-						player_init_time: window.muxPlayerInitTime,
-						video_id: `${video.dataset.videoid}`,
-						video_title: `${video.dataset.title}`,
-						video_duration: videoDuration,
-						viewer_user_id: `${localStorage.ajs_anonymous_id}`,
-						page_type: "iframe",
-						video_stream_type: "on-demand",
-						custom_1: `${video.dataset.postslug}`,
-						custom_2: `${video.dataset.topic}`,
-						custom_3: `${video.dataset.product}`,
-						custom_4: `${video.dataset.isreview}`,
-						custom_5: `${video.dataset.softwareused}`
-					},
+					data: muxData,
 				});
 			}
 		}

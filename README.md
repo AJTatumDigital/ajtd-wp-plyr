@@ -9,7 +9,7 @@ This is a custom WordPress Plugin using the open-source video player [Plyr](http
 * **public/plyr-3.7.8** is a release from Plyr's public repository.
 * **public/hls-1.4.5** is a release from HLS.js's public repository.
 * **js/mux-embed.js** is a local copy from [mux.js](https://src.litix.io/core/4/mux.js).
-* **js/ajtd-plyer-hls**.js is where the customization takes place of setting meta data, loading the video files, and setting up Mux Data.
+* **js/ajtd-plyer-hls.js** is where the customization takes place of setting meta data, loading the video files, and setting up Mux Data.
 * **css/ajtd-plyer.css** is a customized skin for plyr.
 * **ajtd-wp-plyer.php** is a simple PHP class to load the WordPress plugin as a shortcode.
   * The short code can be used multiple times on a page; however, the JavaScript and CSS will only be loaded once, in the footer, per page.
