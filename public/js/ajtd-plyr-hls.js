@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			  ],
 			settings: ['captions', 'quality', 'speed', 'loop'],
 			speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 4] },
-			ratio: '16:9',
+			ratio: video.dataset.radio,
 			fullscreen: { enabled: true, fallback: true, iosNative: false, container: null },
 			tooltips: { controls: true, seek: true },
 			keyboard: { focused: true, global: false },

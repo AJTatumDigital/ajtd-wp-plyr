@@ -5,7 +5,7 @@
  * Author:      AJ Tatum
  * Author URI:  Plugin Author Link
  * Description: https://ajtatumgigital.com
- * Version:     0.1.36
+ * Version:     0.1.38
  * License:     GPL-2.0+
  * License URL: http://www.gnu.org/licenses/gpl-2.0.txt
  * text-domain: ajtd
@@ -31,7 +31,7 @@ function ajtd_plyr_init()
         wp_register_script('plyr', AJTD_PLYR_PLUGIN_URL . 'public/plyr-3.7.8/plyr.min.js', array(), '3.7.8', true);
         wp_register_script('hls', AJTD_PLYR_PLUGIN_URL . 'public/hls-1.4.5/hls.min.js', array(), '1.4.5', true);
         wp_register_script('mux-embed', AJTD_PLYR_PLUGIN_URL . 'public/js/mux-embed.min.js', array(), '4.25.1', true);
-        wp_register_script('ajtd-plyr-hls', AJTD_PLYR_PLUGIN_URL . 'public/js/ajtd-plyr-hls.min.js', array(), '1.0.10', true);
+        wp_register_script('ajtd-plyr-hls', AJTD_PLYR_PLUGIN_URL . 'public/js/ajtd-plyr-hls.min.js', array(), '1.0.12', true);
     }
 
     function ajtd_plyr_scripts_styles()
@@ -66,7 +66,7 @@ function ajtd_plyr_init()
 
         $add_ajtd_plyr_scripts_styles = true;
 
-        extract(shortcode_atts(array(
+        $args = shortcode_atts(array(
             'playbackid' => null,
             'videoid' => null,
             'videotitle' => '',
@@ -78,22 +78,28 @@ function ajtd_plyr_init()
 			'topic' => '',
 			'product' => '',
 			'isreview' => false,
-			'softwareused' => ''
-        ), $atts));
+			'softwareused' => '',
+            'ratio' => ''
+        ), $atts, 'ajtd_plyr');
 
-        if (isset($previewtime) && $previewtime != null && $previewtime != '') {
-            $previewtime = '?time=' . $previewtime;
+        if (isset($args['previewtime']) && $args['previewtime'] != null && $args['previewtime'] != '') {
+            $args['previewtime'] = '?time=' . $args['previewtime'];
         }
 
-		if(!isset($videoid)) {
-			$videoid = $playbackid;
+		if(!isset($args['videoid'])) {
+			$args['videoid'] = $args['playbackid'];
 		}
+
+        if(!isset($args['ratio']) || empty($args['ratio']))
+        {
+            $args['ratio'] = '16:9';
+        }
 
         $post_slug = $post->post_name;
 
         $ajtd_plyr_html = '<div class="video-container">&#10;'
-        . '&#09;<video class="plyr-video" preload="metadata" controls crossorigin playsinline data-m3u8="' . $m3u8 . '" data-mp4high="' . $mp4high . '" data-mp4medium="' . $mp4medium . '" data-mp4low="' . $mp4low . '" data-playbackid="' . $playbackid . '" data-videoid="' . $videoid . '"  data-title="' . $videotitle . '" data-storyboard="https://image.mux.com/' . $playbackid . '/storyboard.vtt?format=webp" data-poster="https://image.mux.com/' . $playbackid . '/thumbnail.webp' . $previewtime . '" data-postslug="' . $post_slug . '" data-topic="' . $topic . '" data-product="' . $product . '" data-isreview="' . $isreview . '" data-softwareused="' . $softwareused . '">&#10;'
-        . '&#09;&#09;<track label="thumbnails" default kind="metadata" src="https://image.mux.com/' . $playbackid . '/storyboard.vtt?format=webp">&#10;'
+        . '&#09;<video class="plyr-video" preload="metadata" controls crossorigin playsinline data-m3u8="' . $args['m3u8'] . '" data-mp4high="' . $args['mp4high'] . '" data-mp4medium="' . $args['mp4medium'] . '" data-mp4low="' . $args['mp4low'] . '" data-playbackid="' . $args['playbackid'] . '" data-videoid="' . $args['videoid'] . '"  data-title="' . $args['videotitle'] . '" data-storyboard="https://image.mux.com/' . $args['playbackid'] . '/storyboard.vtt?format=webp" data-poster="https://image.mux.com/' . $args['playbackid'] . '/thumbnail.webp' . $args['previewtime'] . '" data-postslug="' . $post_slug . '" data-topic="' . $args['topic'] . '" data-product="' . $args['product'] . '" data-isreview="' . $args['isreview'] . '" data-softwareused="' . $args['softwareused'] . '" data-ratio="' . $args['ratio'] . '">&#10;'
+        . '&#09;&#09;<track label="thumbnails" default kind="metadata" src="https://image.mux.com/' . $args['playbackid'] . '/storyboard.vtt?format=webp">&#10;'
         . '&#09;</video>&#10;'
         . '</div>&#10;&#10;';
 
